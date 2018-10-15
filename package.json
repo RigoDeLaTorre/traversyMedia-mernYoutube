@@ -1,0 +1,32 @@
+{
+  "name": "mernyoutube",
+  "version": "1.0.0",
+  "description": "Shopping List built with Mern Stack - Youtube-TraversyMedia ",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RigoDeLaTorre/traversyMedia-mernYoutube.git"
+  },
+  "author": "Rigo De La Torre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RigoDeLaTorre/traversyMedia-mernYoutube/issues"
+  },
+  "homepage": "https://github.com/RigoDeLaTorre/traversyMedia-mernYoutube#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
